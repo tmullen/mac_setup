@@ -1,0 +1,11 @@
+source ~/.dotfiles/zsh/aliases.zsh
+source ~/.dotfiles/zsh/settings.zsh
+source ~/.dotfiles/zsh/prompt.zsh
+source ~/.dotfiles/zsh/git.zsh
+source ~/.dotfiles/zsh/secrets.zsh
+
+# chruby
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

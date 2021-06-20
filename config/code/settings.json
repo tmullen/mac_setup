@@ -1,0 +1,36 @@
+{
+    "editor.fontSize": 14,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "ruby.useLanguageServer": true,
+    "ruby.useBundler": true,
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": true // enable rubocop via bundler
+          },
+          "reek": {
+            "useBundler": true // enable reek via bundler
+          }
+    },
+    "ruby.format": false,
+    "vim.enableNeovim": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "~/.config/nvim/init.vim",
+    "vim.normalModeKeyBindings": [
+      {
+          "before":["<leader>", "<space>"],
+          "commands": [
+              ":nohl",
+          ]
+      }
+    ],
+    "vim.hlsearch": true,
+    "vim.leader": ","
+}

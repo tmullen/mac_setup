@@ -1,0 +1,49 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~' , '~/Library/Application Support/Code/User']
+
+- shell:
+    -
+      command: zsh bin/bootstrap.sh
+      description: Run Homebrew setup
+      quiet: true
+      stdin: true
+      stdout: true
+      stderr: true
+
+- link:
+    ~/.dotfiles: ""
+    ~/.config/nvim/init.vim:
+        path: config/nvim/init.vim
+    ~/.editorconfig:
+        path: editor/editorconfig
+    ~/.gemrc:
+        path: ruby/gemrc
+    ~/.gitconfig:
+            path: git/gitconfig
+    ~/.gitignore:
+            path: git/gitignore
+    ~/.zlogin:
+            path: zsh/zlogin
+    ~/.zprofile:
+            path: zsh/zprofile
+    ~/.zshrc:
+            path: zsh/zshrc
+    ~/Library/Application Support/Code/User:
+            glob: true
+            path: config/code/*
+            relink: true
+            force: true
+
+- shell:
+    -
+      command: source ~/.zshrc
+      description: Reload zshrc configuration
+      quiet: true
+      stdin: true
+      stdout: true
+      stderr: true
+
