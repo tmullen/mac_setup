@@ -32,5 +32,15 @@
       }
     ],
     "vim.hlsearch": true,
-    "vim.leader": ","
+    "vim.leader": ",",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.profiles.osx": {
+      "zsh (login)": {
+        "path": "zsh",
+        "args": ["-l"]
+      }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh (login)",
+    "workbench.startupEditor": "none",
+    "extensions.ignoreRecommendations": true,
 }
