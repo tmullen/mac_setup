@@ -38,7 +38,7 @@ nnoremap <silent> ,cr :let @* = expand("%")<CR>
 nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
 
 "Clear current search highlight
-nmap <silent> // :nohlsearch<CR>
+" nmap <silent> // :nohlsearch<CR>
 nnoremap <silent> <leader><space> :noh<cr>
 
 " move up/down quickly by using Cmd-j, Cmd-k
@@ -55,6 +55,8 @@ autocmd FileType javascript map <buffer> <D-j> {
 " Command-/ to toggle comments
 map <D-/> :TComment<CR>
 imap <D-/> <Esc>:TComment<CR>i
+map // :TComment<CR>
+imap // <Esc>:TComment<CR>i
 
 " Tabularize - alignment
 " Hit Cmd-Shift-A then type a character you want to align by
