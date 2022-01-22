@@ -3,7 +3,6 @@
     "files.trimTrailingWhitespace": true,
     "workbench.colorTheme": "Solarized Dark",
     "ruby.useLanguageServer": true,
-    "ruby.useBundler": true,
     "ruby.lint": {
         "rubocop": {
             "useBundler": true // enable rubocop via bundler
@@ -43,4 +42,6 @@
     "terminal.integrated.defaultProfile.osx": "zsh (login)",
     "workbench.startupEditor": "none",
     "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 3,
+    "editor.tabSize": 2,
 }
