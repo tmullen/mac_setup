@@ -11,6 +11,10 @@ autocmd! FileType fzf set laststatus=0 noshowmode noruler
 "   - CTRL-/ will toggle preview window.
 let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 
+" Search window down at bottom
+let g:fzf_layout = { 'down': '40%' }
+
+
 " Colors to use underlying color scheme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
