@@ -62,3 +62,30 @@ imap // <Esc>:TComment<CR>i
 " Hit Cmd-Shift-A then type a character you want to align by
 nmap <D-A> :Tabularize /
 vmap <D-A> :Tabularize /
+
+"(v)im (r)eload
+nmap <silent> ,vr :so %<CR>
+
+
+function! s:getSelectedText()
+  let l:old_reg = getreg('"')
+  let l:old_regtype = getregtype('"')
+  norm gvy
+  let l:ret = getreg('"')
+  call setreg('"', l:old_reg, l:old_regtype)
+  exe "norm \<Esc>"
+  return l:ret
+endfunction
+
+vnoremap <silent> * :call setreg("/",
+    \ substitute(<SID>getSelectedText(),
+    \ '\_s\+',
+    \ '\\_s\\+', 'g')
+    \ )<Cr>n
+
+vnoremap <silent> # :call setreg("?",
+    \ substitute(<SID>getSelectedText(),
+    \ '\_s\+',
+    \ '\\_s\\+', 'g')
+    \ )<Cr>n
+

@@ -8,7 +8,7 @@ set nocompatible
 
 " ================ General Config ====================
 
-set number                      "Line numbers
+set number                      "line numbers
 set relativenumber              "Show relative distance
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -21,8 +21,6 @@ set splitbelow                  "Open splits below current
 set splitright                  "Open splits to the right of current
 set showmatch                   "Show matching braces
 set matchtime=2                 "Speed up showmatch time
-" set autochdir                   "Set working dir to current file
-set clipboard=unnamedplus       "Use system clipboard
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -40,7 +38,7 @@ let mapleader = ","
 " Use Vundle plugin to manage all other plugins
 call plug#begin('~/.vim/plugged')
   " Themes
-  Plug 'overcache/NeoSolarized'
+  Plug 'lifepillar/vim-solarized8'
   Plug 'itchyny/lightline.vim'
 
   " Coding
@@ -52,12 +50,13 @@ call plug#begin('~/.vim/plugged')
   " Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  
+
   " Editor
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-surround'
+  Plug 'numToStr/Comment.nvim'
 
-  " Git 
+  " Git
   Plug 'tpope/vim-fugitive'
 call plug#end()
 

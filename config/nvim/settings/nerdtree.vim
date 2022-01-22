@@ -8,17 +8,16 @@ function! OpenNerdTree()
   endif
 endfunction
 
-nnoremap <silent> <C-\> :call OpenNerdTree()<CR>
-
 let g:nerdtree_tabs_open_on_gui_startup = 1
 let g:nerdtree_tabs_focus_on_files = 1
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
+
 " Automaticaly close vim if NERDTree is only thing left open
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
-nnoremap <silent> <D-N> :NERDTreeToggle<CR>
+nnoremap <silent> <C-\> :call OpenNerdTree()<CR>
+

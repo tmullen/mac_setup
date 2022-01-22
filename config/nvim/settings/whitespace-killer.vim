@@ -11,5 +11,7 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
+
 command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
+
 nmap ,w :StripTrailingWhitespaces<CR>
