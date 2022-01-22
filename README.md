@@ -19,15 +19,14 @@ Generate new keys (see [Connecting to Github w/ SSH](https://docs.github.com/en/
 %> cd ~/github/home/
 %> git clone git@github.com:tmullen/mac_setup.git
 ```
-
-### Load iTerm2 profile
-Go to: iTerm2 > Preferences > Profiles
-
-Choose "Other Actions" and loan JSON profile from ~/github/home/mac_setup/iTerm2/Profile.json
+(NOTE: Prompt to install Xcode Dev Tools)
 
 ### Update Dotbot
 ```
 %> cd ~/github/home/mac_setup
+%> git submodule update --init
+
+# or if already initialized
 %> git submodule update --remote dotbot
 ```
 
@@ -35,6 +34,15 @@ Choose "Other Actions" and loan JSON profile from ~/github/home/mac_setup/iTerm2
 ```
 %> ./install
 ```
+
+## Load iTerm2 profile
+1. Go to: iTerm2 > Preferences > Profiles
+2. Choose "Other Actions" and loan JSON profile from ~/github/home/mac_setup/iTerm2/Profile.json
+3. Set as Default (delete existing profile)
+
+## Load NeoVim Plugins
+1. Open nvim and type `%> :PlugInstall`
+2. Restart
 
 ## Install Ruby
 Add ruby plugin to ASDF package manager:
