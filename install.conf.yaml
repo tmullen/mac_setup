@@ -22,6 +22,8 @@
         path: editor/editorconfig
     ~/.gemrc:
         path: ruby/gemrc
+    ~/.asdfrc:
+        path: ruby/asdfrc
     ~/.gitconfig:
             path: git/gitconfig
     ~/.gitignore:

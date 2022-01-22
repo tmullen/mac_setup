@@ -37,28 +37,42 @@ Choose "Other Actions" and loan JSON profile from ~/github/home/mac_setup/iTerm2
 ```
 
 ## Install Ruby
+Add ruby plugin to ASDF package manager:
+```
+%> asdf plugin add ruby
+```
+
 Install one or more ruby versions:
 ```
-%> ruby-install ruby
-%> ruby-install ruby-3.0.1
+%> asdf install ruby latest
+%> asdf install ruby 2.7.3
 ```
 
 Set global ruby version:
 ```
-%> echo "ruby-3.0.1" > ~/.ruby-version
+%> asdf global ruby 3.1.0
+```
+
+Helpful commands:
+```
+%> asdf list all ruby  # list all versions of ruby
+%> asdf plugin-update ruby  # update plugin if you don't see latest versions
 ```
 
 ## Install NodeJS
-Install NVM per [instructions](https://github.com/nvm-sh/nvm#install--update-script). The command will look something like:
+Add NodeJS plugin to ASDF package manager:
 ```
-%> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+%> asdf plugin add nodejs
 ```
 
-Then install appropriate NodeJS version:
+Install one or more ruby versions:
 ```
-%> nvm ls-remote | grep -i 'latest'
-%> nvm install v16.3.1
-%> node --version
-%> nvm cache clear
+%> asdf install nodejs latest
+%> asdf install nodejs 16.3.1
+```
+
+Set global NodeJS version:
+```
+%> asdf global nodejs 16.3.1
 ```
 

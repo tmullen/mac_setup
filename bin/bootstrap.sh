@@ -8,8 +8,7 @@ packages=(
   zsh
   git
   neovim
-  chruby
-  ruby-install
+  asdf
 )
 for p in $packages; do
   [ ! -d /opt/homebrew/Cellar/$p ] && brew install $p

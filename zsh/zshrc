@@ -5,12 +5,9 @@ source ~/.dotfiles/zsh/git.zsh
 source ~/.dotfiles/zsh/history.zsh
 source ~/.dotfiles/zsh/secrets.zsh
 
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+export FZF="$HOME/.fzf.zsh"
+[ -f $FZF ] && source $FZF
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export ASDF="/opt/homebrew/opt/asdf"
+[ -d $ASDF ] && . "$ASDF/libexec/asdf.sh"
 
-# Auto generated when installing NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
