@@ -21,6 +21,7 @@ set splitbelow                  "Open splits below current
 set splitright                  "Open splits to the right of current
 set showmatch                   "Show matching braces
 set matchtime=2                 "Speed up showmatch time
+set clipboard=unnamedplus       "Use system clipboard
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
