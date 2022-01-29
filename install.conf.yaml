@@ -15,30 +15,30 @@
       stderr: true
 
 - link:
-    ~/.dotfiles: ""
-    ~/.config/nvim/init.vim:
-        path: config/nvim/init.vim
-    ~/.editorconfig:
-        path: editor/editorconfig
-    ~/.gemrc:
-        path: ruby/gemrc
     ~/.asdfrc:
-        path: ruby/asdfrc
+      path: ruby/asdfrc
+    ~/.config/nvim/init.vim:
+      path: config/nvim/init.vim
+    ~/.dotfiles: ""
+    ~/.editorconfig:
+      path: editor/editorconfig
+    ~/.gemrc:
+      path: ruby/gemrc
     ~/.gitconfig:
-            path: git/gitconfig
+      path: git/gitconfig
     ~/.gitignore:
-            path: git/gitignore
+      path: git/gitignore
     ~/.zlogin:
-            path: zsh/zlogin
+      path: zsh/zlogin
     ~/.zprofile:
-            path: zsh/zprofile
+      path: zsh/zprofile
     ~/.zshrc:
-            path: zsh/zshrc
+      path: zsh/zshrc
     ~/Library/Application Support/Code/User:
-            glob: true
-            path: config/code/*
-            relink: true
-            force: true
+      glob: true
+      path: config/code/*
+      relink: true
+      force: true
 
 - shell:
     -
