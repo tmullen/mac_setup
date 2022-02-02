@@ -8,6 +8,7 @@ packages=(
   zsh
   git
   neovim
+  macvim
   asdf
 )
 for p in $packages; do
@@ -27,7 +28,11 @@ for a in $applications; do
   [ ! -d /opt/homebrew/Caskroom/$a ] && /opt/homebrew/bin/brew install $a
 done
 
+echo "Installing Vim plugin manager..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 echo "Installing NeoVim plugin manager..."
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

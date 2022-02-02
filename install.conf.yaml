@@ -28,6 +28,8 @@
       path: git/gitconfig
     ~/.gitignore:
       path: git/gitignore
+    ~/.vimrc:
+      path: vim/vimrc
     ~/.zlogin:
       path: zsh/zlogin
     ~/.zprofile:
