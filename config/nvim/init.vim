@@ -41,12 +41,10 @@ call plug#begin('~/.vim/plugged')
   " Themes
   Plug 'lifepillar/vim-solarized8'
   Plug 'itchyny/lightline.vim'
-
-  " Coding
-  Plug 'thoughtbot/vim-rspec'
+  Plug 'morhetz/gruvbox'
 
   " Files
-  Plug 'scrooloose/nerdtree'
+  Plug 'preservim/nerdtree'
 
   " Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -59,6 +57,10 @@ call plug#begin('~/.vim/plugged')
 
   " Git
   Plug 'tpope/vim-fugitive'
+
+  " Ruby
+  Plug 'tpope/vim-rails'
+  Plug 'thoughtbot/vim-rspec'
 call plug#end()
 
 " ================ Turn Off Swap Files ==============
