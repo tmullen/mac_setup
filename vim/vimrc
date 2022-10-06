@@ -49,6 +49,7 @@ call plug#begin('~/.vim/plugged')
 
   " Vim Improvements
   Plug 'tomtom/tcomment_vim'
+  Plug 'christoomey/vim-tmux-navigator'
   Plug 'sjl/gundo.vim'
   Plug 'skwp/YankRing.vim'
   Plug 'tpope/vim-surround'
