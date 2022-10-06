@@ -30,6 +30,15 @@ Generate new keys (see [Connecting to Github w/ SSH](https://docs.github.com/en/
 %> git submodule update --remote dotbot
 ```
 
+### Install Xcode
+Given various development tools might be best to install Xcode via App Store
+
+And, add Command Line Tools
+```
+%> xcode-select --install
+```
+(NOTE: may need to accept license agreement)
+
 ## Run Dotfiles Install
 ```
 %> ./install
