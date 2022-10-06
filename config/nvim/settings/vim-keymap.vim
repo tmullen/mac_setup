@@ -1,6 +1,10 @@
 " set alternate escape
 imap jj <Esc>
 
+" copy/paste visual selections
+inoremap <D-v> <ESC>"+pa
+vnoremap <D-c> "+y
+
 " ==============================
 " Window/Tab/Split Manipulation
 " ==============================
@@ -49,14 +53,8 @@ autocmd FileType ruby map <buffer> <D-j> ]m
 autocmd FileType ruby map <buffer> <D-k> [m
 autocmd FileType rspec map <buffer> <D-j> }
 autocmd FileType rspec map <buffer> <D-k> {
-autocmd FileType javascript map <buffer> <D-k> }
-autocmd FileType javascript map <buffer> <D-j> {
-
-" Command-/ to toggle comments
-map <D-/> :TComment<CR>
-imap <D-/> <Esc>:TComment<CR>i
-map // :TComment<CR>
-imap // <Esc>:TComment<CR>i
+" autocmd FileType javascript map <buffer> <D-k> }
+" autocmd FileType javascript map <buffer> <D-j> {
 
 " Tabularize - alignment
 " Hit Cmd-Shift-A then type a character you want to align by
