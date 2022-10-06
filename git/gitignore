@@ -49,6 +49,9 @@ Session.vim
 # VS Code
 *.code-workspace
 
+# Version Manager
+.tool-versions
+
 # WebPacker
 .yarn
 .yarnrc

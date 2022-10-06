@@ -104,7 +104,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /Users/tedmullen/.gitignore
+	excludesfile = /Users/ted/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -124,16 +124,16 @@
 	process = git-lfs filter-process
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [gpg]
 	program = /usr/local/bin/gpg
 [user]
 	name = Ted Mullen
 	email = tedmullen@gmail.com
-	signingkey = 4C9282BFD8C6D9C4
+	signingkey = 81C5075270ACA201
 [credential]
   helper = osxkeychain
 
