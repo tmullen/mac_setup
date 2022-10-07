@@ -26,8 +26,6 @@
       path: ruby/gemrc
     ~/.gitconfig:
       path: git/gitconfig
-    ~/.gitignore_global:
-      path: git/gitignore
     ~/.vimrc:
       path: vim/vimrc
     ~/.zlogin:
