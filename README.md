@@ -49,8 +49,8 @@ And, add Command Line Tools
 2. Choose "Other Actions" and loan JSON profile from ~/github/home/mac_setup/iTerm2/Profile.json
 3. Set as Default (delete existing profile)
 
-## Load NeoVim Plugins
-1. Open nvim and type `%> :PlugInstall`
+## Load Vim Plugins
+1. Open mvim and/or nvim and type `%> :PlugInstall`
 2. Restart
 
 ## Install Ruby
