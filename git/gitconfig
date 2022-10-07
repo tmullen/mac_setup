@@ -104,7 +104,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /Users/ted/.gitignore_global
+	excludesFile = ~/.gitignore
 [advice]
   statusHints = false
 [diff]
@@ -116,7 +116,7 @@
   path = .gitconfig.user
 [commit]
 	gpgsign = true
-	template = /Users/tedmullen/.stCommitMsg
+	template = ~/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -124,16 +124,17 @@
 	process = git-lfs filter-process
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [gpg]
 	program = /usr/local/bin/gpg
 [user]
-	name = Ted Mullen
-	email = tedmullen@gmail.com
-	signingkey = 81C5075270ACA201
+  name = Ted Mullen
+  email = tedmullen@gmail.com
+  signingkey = 4C9282BFD8C6D9C4
 [credential]
   helper = osxkeychain
-
+[includeIf "gitdir:**/ted/**/.git"]
+  path = .gitconfig.peerstreet

@@ -26,6 +26,8 @@
       path: ruby/gemrc
     ~/.gitconfig:
       path: git/gitconfig
+    ~/.gitconfig.peerstreet:
+      path: git/gitconfig.peerstreet
     ~/.vimrc:
       path: vim/vimrc
     ~/.zlogin:
