@@ -12,6 +12,7 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set splitright
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -43,6 +44,8 @@ call plug#begin('~/.vim/plugged')
 
   " Ruby
   Plug 'tpope/vim-rails'
+  Plug 'keith/rspec.vim'
+  Plug 'skwp/vim-iterm-rspec'
 
   " Text Objects
   Plug 'nathanaelkane/vim-indent-guides'
