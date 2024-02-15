@@ -96,6 +96,7 @@ set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
+set colorcolumn=80
 
 " ================ Folds ============================
 
