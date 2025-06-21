@@ -28,6 +28,8 @@
       path: git/gitconfig
     ~/.gitconfig.peerstreet:
       path: git/gitconfig.peerstreet
+    ~/.irbrc:
+      path: ruby/irbrc
     ~/.vimrc:
       path: vim/vimrc
     ~/.zlogin:
