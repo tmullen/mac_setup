@@ -138,3 +138,5 @@
   helper = osxkeychain
 [includeIf "gitdir:**/ted/github/"]
   path = ~/.gitconfig.peerstreet
+[init]
+	defaultBranch = main
