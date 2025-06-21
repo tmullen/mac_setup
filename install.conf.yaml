@@ -16,7 +16,7 @@
 
 - link:
     ~/.asdfrc:
-      path: ruby/asdfrc
+      path: asdf/asdfrc
     ~/.config/nvim/init.vim:
       path: config/nvim/init.vim
     ~/.dotfiles: ""

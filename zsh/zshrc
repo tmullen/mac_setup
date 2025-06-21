@@ -8,6 +8,6 @@ source ~/.dotfiles/zsh/secrets.zsh
 export FZF="$HOME/.fzf.zsh"
 [ -f $FZF ] && source $FZF
 
-export ASDF="/opt/homebrew/opt/asdf"
-[ -d $ASDF ] && . "$ASDF/libexec/asdf.sh"
+export ASDF=$(brew --prefix asdf)
+[ -d $ASDF ] && export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
