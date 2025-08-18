@@ -48,6 +48,7 @@ Session.vim
 
 # VS Code
 *.code-workspace
+.vscode/
 
 # Version Manager
 .tool-versions
@@ -56,4 +57,9 @@ Session.vim
 .yarn
 .yarnrc
 .nvmrc
+
+# AI
+CLAUDE.local.md
+**/.claude/settings.local.json
+CLAUDE.local.md
 
