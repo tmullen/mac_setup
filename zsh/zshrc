@@ -12,3 +12,4 @@ export FZF="$HOME/.fzf.zsh"
 export ASDF=$(brew --prefix asdf)
 [ -d $ASDF ] && export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
+export PATH="/opt/homebrew/opt/mariadb@10.11/bin:$PATH"
