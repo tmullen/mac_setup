@@ -40,8 +40,11 @@ asdf global <plugin> <version>
 
 ### Vim/NeoVim
 ```bash
-# Install plugins (run inside vim/nvim)
+# Vim uses vim-plug — install plugins inside vim:
 :PlugInstall
+
+# NeoVim uses LazyVim — plugins auto-install on launch
+# Plugin specs live in config/nvim/lua/plugins/
 ```
 
 ## Architecture
@@ -62,10 +65,14 @@ asdf global <plugin> <version>
 - **editor/**: EditorConfig for consistent coding styles
 - **iTerm2/**: iTerm2 terminal profile
 
+### How Symlinks Work
+Dotbot symlinks `~/.dotfiles` → this repo root. Zsh configs reference files via `~/.dotfiles/zsh/...`, so the symlink must exist for sourcing to work.
+
 ### Key Files
 - **bin/bootstrap.sh**: Installs Homebrew, development packages, and applications
-- **zsh/zshrc**: Main Zsh configuration that sources modular config files
-- **vim/vimrc**: Main Vim configuration with plugin management via vim-plug
+- **zsh/zshrc**: Main Zsh configuration that sources modular config files via `~/.dotfiles/zsh/`
+- **vim/vimrc**: Vim configuration with plugin management via vim-plug
+- **config/nvim/**: NeoVim configuration using LazyVim; plugins in `lua/plugins/`, keymaps/options in `lua/config/`
 
 ## Important Notes
 
