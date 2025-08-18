@@ -4,6 +4,7 @@ source ~/.dotfiles/zsh/prompt.zsh
 source ~/.dotfiles/zsh/git.zsh
 source ~/.dotfiles/zsh/history.zsh
 source ~/.dotfiles/zsh/secrets.zsh
+source ~/.dotfiles/zsh/claude.zsh
 
 export FZF="$HOME/.fzf.zsh"
 [ -f $FZF ] && source $FZF
