@@ -36,3 +36,9 @@ echo "Installing NeoVim plugin manager..."
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+echo "Installing Claude Code..."
+if ! command -v claude >/dev/null 2>&1; then
+  curl -fsSL claude.ai/install.sh | bash
+else
+  echo "Claude Code already installed"
+fi
