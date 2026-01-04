@@ -63,3 +63,6 @@ CLAUDE.local.md
 **/.claude/settings.local.json
 CLAUDE.local.md
 
+# Git
+.worktrees/
+
