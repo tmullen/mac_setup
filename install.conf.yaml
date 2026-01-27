@@ -17,8 +17,8 @@
 - link:
     ~/.asdfrc:
       path: asdf/asdfrc
-    ~/.config/nvim/init.vim:
-      path: config/nvim/init.vim
+    ~/.config/nvim:
+      path: config/nvim
     ~/.dotfiles: ""
     ~/.editorconfig:
       path: editor/editorconfig
