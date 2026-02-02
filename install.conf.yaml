@@ -43,6 +43,14 @@
       path: config/code/*
       relink: true
       force: true
+    ~/.claude/CLAUDE.md:
+      path: claude/CLAUDE.md
+    ~/.claude/settings.json:
+      path: claude/settings.json
+    ~/.claude/commands:
+      path: claude/commands
+    ~/.claude/plugins/repos/worktree:
+      path: claude/plugins/worktree
 
 - shell:
     -
