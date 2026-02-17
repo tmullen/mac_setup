@@ -1,0 +1,6 @@
+git:
+  overrideGpg: true
+os:
+  # Use neovim-remote to open files in the parent Neovim instance
+  # instead of launching a nested Neovim inside the LazyGit terminal
+  editPreset: 'nvim-remote'

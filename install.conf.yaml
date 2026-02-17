@@ -17,6 +17,8 @@
 - link:
     ~/.asdfrc:
       path: asdf/asdfrc
+    ~/Library/Application Support/lazygit/config.yml:
+      path: config/lazygit/config.yml
     ~/.config/nvim:
       path: config/nvim
     ~/.dotfiles: ""
