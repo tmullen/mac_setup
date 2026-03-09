@@ -45,6 +45,8 @@
       path: config/code/*
       relink: true
       force: true
+    ~/.config/ghostty:
+      path: config/ghostty
     ~/.claude/CLAUDE.md:
       path: claude/CLAUDE.md
     ~/.claude/settings.json:

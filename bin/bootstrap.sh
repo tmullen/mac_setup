@@ -27,6 +27,7 @@ applications=(
   notion
   sourcetree
   visual-studio-code
+  ghostty
 )
 for a in $applications; do
   [ ! -d /opt/homebrew/Caskroom/$a ] && /opt/homebrew/bin/brew install $a
