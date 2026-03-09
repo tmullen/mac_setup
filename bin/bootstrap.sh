@@ -14,6 +14,7 @@ packages=(
   fd
   fzf
   lazygit
+  neovim-remote
 )
 for p in $packages; do
   [ ! -d /opt/homebrew/Cellar/$p ] && /opt/homebrew/bin/brew install $p
