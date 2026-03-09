@@ -69,7 +69,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "input=$(cat); user=$(whoami); dir=$(basename \"$(pwd)\"); branch=$(git -c core.useReplaceRefs=false rev-parse --abbrev-ref HEAD 2>/dev/null); dirty=$([ -n \"$(git -c core.useReplaceRefs=false status --porcelain 2>/dev/null)\" ] && echo '*' || echo ''); remaining=$(echo \"$input\" | jq -r '.context_window.remaining_percentage // empty'); model=$(echo \"$input\" | jq -r '.model.display_name'); time=$(date +%H:%M:%S); tasks=$(echo \"$input\" | jq -r '.task_list.count // empty'); printf \"\\033[2m%s@%s\" \"$user\" \"$dir\"; [ -n \"$branch\" ] && printf \" (%s%s)\" \"$branch\" \"$dirty\"; [ -n \"$remaining\" ] && printf \" | ctx:%s%%\" \"$remaining\"; printf \" | %s | %s\" \"$model\" \"$time\"; [ -n \"$tasks\" ] && [ \"$tasks\" -gt 0 ] && printf \" | tasks:%s\" \"$tasks\"; printf \"\\033[0m\""
+    "command": "~/.dotfiles/claude/statusline.sh"
   },
   "enabledPlugins": {
     "worktree@repos": true,
@@ -93,9 +93,14 @@
     "claude-code-setup@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "coderabbit@claude-plugins-official": true,
-    "playground@claude-plugins-official": true
+    "playground@claude-plugins-official": true,
+    "Notion@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "semgrep@claude-plugins-official": true,
+    "hookify@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true,
+  "autoCommitCoAuthor": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754079929831
   }
