@@ -10,5 +10,5 @@ precmd() {
     vcs_info
 }
 
-PROMPT="%F{red}%m %F{blue}%~%f %# "
-RPROMPT='${vcs_info_msg_0_}%F{yellow}%*%f'
+PROMPT='%F{blue}%1~%f %# '
+RPROMPT='${vcs_info_msg_0_}'
